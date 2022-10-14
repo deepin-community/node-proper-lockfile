@@ -1,0 +1,5 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-proper-lockfile-$1.tar.gz/ \
+ https://github.com/IndigoUnited/node-proper-lockfile/tags .*/archive/.*/v?([\d\.]+).tar.gz

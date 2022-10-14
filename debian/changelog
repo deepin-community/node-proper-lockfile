@@ -1,0 +1,66 @@
+node-proper-lockfile (4.1.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on node-graceful-fs.
+    + node-proper-lockfile: Drop versioned constraint on node-graceful-fs in
+      Depends.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * New upstream version 4.1.2
+  * Enable upstream test using jest
+  * Update copyright
+
+ -- Yadd <yadd@debian.org>  Sun, 03 Oct 2021 17:44:56 +0200
+
+node-proper-lockfile (4.1.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 31 May 2020 08:19:43 +0200
+
+node-proper-lockfile (4.1.1-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 4.1.1
+  * Disable test (waiting for node-jest release)
+  * Add dependency to node-signal-exit
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 09 Apr 2020 11:20:16 +0200
+
+node-proper-lockfile (2.0.1-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Paolo Greppi ]
+  * Update Vcs fields for migration to https://salsa.debian.org/
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 12
+  * Use pkg-js-tools auto test & install (Closes: #956267)
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Mark build dependencies as <!nocheck>
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 09 Apr 2020 11:06:28 +0200
+
+node-proper-lockfile (2.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add the build dependency on node-async (Closes: #865892)
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Wed, 19 Jul 2017 16:19:39 +0200
+
+node-proper-lockfile (2.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #846216)
+  * Relax the version dependency on node-retry.
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Fri, 16 Dec 2016 15:53:59 +0000

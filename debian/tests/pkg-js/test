@@ -1,0 +1,1 @@
+jest --env node --ci -i

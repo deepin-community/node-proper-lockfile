@@ -1,1 +1,5 @@
-.pc/
+node_modules/
+npm-debug.*
+coverage/
+test/tmp/
+test/*.log

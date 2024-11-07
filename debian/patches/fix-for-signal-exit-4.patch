@@ -1,0 +1,16 @@
+Description: fix for signal-exit 4
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2023-08-17
+
+--- a/lib/lockfile.js
++++ b/lib/lockfile.js
+@@ -3,7 +3,7 @@
+ const path = require('path');
+ const fs = require('graceful-fs');
+ const retry = require('retry');
+-const onExit = require('signal-exit');
++const { onExit } = require('signal-exit');
+ const mtimePrecision = require('./mtime-precision');
+ 
+ const locks = {};

@@ -1,1 +1,1 @@
-jest --env node --ci -i
+jest --env node --ci -i test/release.test.js
